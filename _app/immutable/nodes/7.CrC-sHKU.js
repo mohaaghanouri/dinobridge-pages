@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/BMX1ug8m.js";const r=!0;function t(){e(301,"/de/fuer-unternehmen/")}const n=Object.freeze(Object.defineProperty({__proto__:null,load:t,prerender:r},Symbol.toStringTag,{value:"Module"}));export{n as universal};

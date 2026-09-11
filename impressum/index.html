@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<!-- Google's favicon crawler wants a square icon that is a multiple of 48px;
+		     favicon.ico only carries 16 and 32. -->
+		<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0b1428" />
+		<meta name="color-scheme" content="dark light" />
+		<!-- Colour theme. Dark (ink) is the default and needs no attribute; a
+		     visitor who chose light gets data-theme="light" before first paint.
+		     The click handler is delegated so the toggle works on the pages that
+		     ship no JavaScript bundle. The choice lives in localStorage, on the
+		     visitor's own click only — the Datenschutzerklärung says so. -->
+		<script>
+			(function () {
+				var d = document.documentElement;
+				var t = null;
+				try { t = localStorage.getItem('theme'); } catch (e) {}
+				if (t === 'light') d.setAttribute('data-theme', 'light');
+				document.addEventListener('click', function (e) {
+					if (!e.target.closest('[data-theme-toggle]')) return;
+					var light = d.getAttribute('data-theme') !== 'light';
+					if (light) d.setAttribute('data-theme', 'light'); else d.removeAttribute('data-theme');
+					try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#12264a' : '#0b1428');
+				});
+			})();
+		</script>
+		<!--1588ews--><meta name="robots" content="noindex"/><!----><title>Impressum — Dinobridge</title>
+		<link href="/_app/immutable/assets/0.CGk9dsc6.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/21.Dt60KtS2.css" rel="stylesheet">
+		<!-- No analytics beacon here, deliberately, and it must stay that way while
+		     the copy says what it currently says.
+
+		     The Cloudflare Web Analytics snippet used to sit here. It was a sound
+		     choice on its own terms — cookieless, no localStorage, so no consent
+		     banner under TDDDG §25 — but three places on this site state flatly
+		     that there is no analytics at all:
+
+		       src/routes/datenschutz/+page.svelte  "nutzt keine Analyse-Dienste"
+		       src/lib/copy/en.js  security.stack   "no cookies, no analytics"
+		       src/lib/copy/de.js  security.stack   "keine Cookies, keine Analyse"
+
+		     The first of those is the Datenschutzerklärung, so the mismatch was an
+		     Art. 13 DSGVO disclosure gap and an affirmative denial of a processing
+		     activity that was happening. On a site whose security page is the
+		     document a general counsel reads, a claim a visitor can disprove from
+		     the network tab is worse than having no metric.
+
+		     Traffic is still visible: Cloudflare's zone analytics are server-side,
+		     need no beacon, and report requests, bandwidth, countries and cache
+		     ratio without anything running in the visitor's browser.
+
+		     To bring client-side analytics back, all three claims above have to
+		     change first and the Datenschutzerklärung needs its own section naming
+		     the processor and its legal basis. Re-adding the script alone puts the
+		     site back into a false statement. -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><main class="wrap legal svelte-1588ews"><h1 class="svelte-1588ews">Impressum</h1> <h2 class="svelte-1588ews">Angaben gemäß § 5 DDG</h2> <p class="svelte-1588ews">Dinobridge<br/> Inhaber: Moha Aghanoori<br/> Silbersteinstraße 131<br/> 12051 Berlin<br/> Deutschland</p> <h2 class="svelte-1588ews">Kontakt</h2> <!----><!--email_off--><!----> <p class="svelte-1588ews">E-Mail: <a href="mailto:connect@dinobridge.de">connect@dinobridge.de</a></p> <!----><!--/email_off--><!----> <h2 class="svelte-1588ews">Verantwortlich für den Inhalt</h2> <p class="svelte-1588ews">Moha Aghanoori (Anschrift wie oben)</p> <p class="back-home svelte-1588ews"><a href="/" class="svelte-1588ews">← Zurück zur Startseite</a></p></main><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]--></div>
+	</body>
+</html>

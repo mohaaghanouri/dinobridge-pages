@@ -1,0 +1,62 @@
+# dinobridge.de
+
+> Dinobridge — a Berlin company that puts a senior AI expert on your side. Two doors: businesses
+> (any company, startup, team, office or research group — consulting inside the business, enabling the
+> team, building the platforms; every decision stays with the leadership) and individuals (a CEO who
+> wants a private advisor, a founder, someone with an idea, a decision, a skill to learn or a child to
+> teach — plain-language consulting, hands-on help, and building). Business clients across many
+> fields and individuals (job seekers, athletes, home buyers, teachers, coaches, online shoppers).
+> Berlin, English and German. Dinobridge is owned
+> and led by Moha Aghanoori: years of professional engineering building
+> production AI systems other people depend on.
+
+Honest note on this file: as of 2026 no major LLM provider consumes /llms.txt as a
+ranking or citation signal, and Google Search states in writing that it ignores it.
+It exists here because it costs nothing to maintain and the agentic-browsing
+convention may yet go somewhere. The file every engine actually reads is
+/sitemap.xml.
+
+## Pages
+
+- [Home (English)](https://dinobridge.de/): what Dinobridge does, who it helps, how it works, FAQ.
+- [Startseite (Deutsch)](https://dinobridge.de/de/): dieselben Inhalte auf Deutsch.
+- [For businesses](https://dinobridge.de/for-businesses/): the three offers — consult, enable, build — for a company,
+  a team or a research group. The Head of AI retainer, what the role covers, what stays with the team,
+  and how continuity, ownership and handover work with a small supplier.
+- [For individuals](https://dinobridge.de/for-individuals/): the same three offers for one person — a decision, an
+  idea, a company to start, a skill to learn, a child to teach. How it runs, what stays with you, and
+  what we will not do.
+- [For law firms](https://dinobridge.de/for-law-firms/): what AI can safely take over in a Kanzlei and what stays
+  lawyer-controlled; confidentiality under §43e BRAO and §203 StGB alongside the Art. 28 DSGVO AVV;
+  what is logged, where processing happens, how hallucination risk is constrained, and the exit.
+- [For marketing agencies](https://dinobridge.de/for-marketing-agencies/): brief intake, source-backed research,
+  content operations, review and client reporting — with publishing, strategy and creative judgement
+  kept under named human control.
+- [Security and confidentiality](https://dinobridge.de/security/): what is signed before anything starts, where
+  processing happens, human oversight, access control, AI governance under Article 4 of the EU AI Act,
+  documentation and exit — and an explicit list of what we do not have.
+- [About Dinobridge](https://dinobridge.de/about/): years of professional engineering
+  building production AI systems other people depend on; the production systems behind the case
+  pages, and an honest statement of capacity.
+- [How we decide what to build](https://dinobridge.de/method/): the four tests that separate repetitive work
+  from judgement, the consulting work step by step, and the five reasons we say no.
+
+## Real examples
+
+- [Lawyers](https://dinobridge.de/work/lawyers/): contract intake, versioning and a first-pass Word markup with a reason per change.
+- [Architects](https://dinobridge.de/work/architects/): drawing register, quote normalising, same-evening site Protokolle. Never certifies.
+- [Team leaders](https://dinobridge.de/work/team-leaders/): a private record per person and 1:1 prep. No ratings, no activity monitoring.
+- [Estate agents](https://dinobridge.de/work/estate-agents/): lead triage in minutes and compliant Exposés. No valuation, no generated photos.
+- [Executives](https://dinobridge.de/work/executives/): inbox triage, a pre-meeting brief and a commitment ledger. It never speaks as you.
+- [Non-profits](https://dinobridge.de/work/volunteer-orgs/): a reusable core reshaped per funder; no impact claim is ever generated.
+- [Research](https://dinobridge.de/work/research/): reusable proposal text, supervision records and literature screening. Never generates a citation.
+
+## Legal
+
+- [Impressum](https://dinobridge.de/impressum/)
+- [Datenschutz](https://dinobridge.de/datenschutz/)
+
+## Contact
+
+- Book a 30-minute discovery call: https://cal.com/mohaaghanouri/discovery-call
+- Email: connect@dinobridge.de

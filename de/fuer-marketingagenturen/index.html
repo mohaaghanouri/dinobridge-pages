@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<!-- Google's favicon crawler wants a square icon that is a multiple of 48px;
+		     favicon.ico only carries 16 and 32. -->
+		<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0b1428" />
+		<meta name="color-scheme" content="dark light" />
+		<!-- Colour theme. Dark (ink) is the default and needs no attribute; a
+		     visitor who chose light gets data-theme="light" before first paint.
+		     The click handler is delegated so the toggle works on the pages that
+		     ship no JavaScript bundle. The choice lives in localStorage, on the
+		     visitor's own click only — the Datenschutzerklärung says so. -->
+		<script>
+			(function () {
+				var d = document.documentElement;
+				var t = null;
+				try { t = localStorage.getItem('theme'); } catch (e) {}
+				if (t === 'light') d.setAttribute('data-theme', 'light');
+				document.addEventListener('click', function (e) {
+					if (!e.target.closest('[data-theme-toggle]')) return;
+					var light = d.getAttribute('data-theme') !== 'light';
+					if (light) d.setAttribute('data-theme', 'light'); else d.removeAttribute('data-theme');
+					try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#12264a' : '#0b1428');
+				});
+			})();
+		</script>
+		<!--m1ljtr--><meta name="description" content="KI-Beratung und Produktionssysteme für Marketingagenturen: Briefings, Recherche, Content-Abläufe und Reporting werden ruhiger und prüfbar, während Strategie und kreatives Urteil beim Team bleiben."/> <link rel="canonical" href="https://dinobridge.de/de/fuer-marketingagenturen/"/> <link rel="alternate" hreflang="en" href="https://dinobridge.de/for-marketing-agencies/"/> <link rel="alternate" hreflang="de" href="https://dinobridge.de/de/fuer-marketingagenturen/"/> <link rel="alternate" hreflang="x-default" href="https://dinobridge.de/for-marketing-agencies/"/> <meta property="og:type" content="article"/> <meta property="og:title" content="KI-Systeme für Marketingagenturen — Dinobridge"/> <meta property="og:description" content="KI-Beratung und Produktionssysteme für Marketingagenturen: Briefings, Recherche, Content-Abläufe und Reporting werden ruhiger und prüfbar, während Strategie und kreatives Urteil beim Team bleiben."/> <meta name="twitter:card" content="summary_large_image"/> <meta property="og:url" content="https://dinobridge.de/de/fuer-marketingagenturen/"/> <meta property="og:image" content="https://dinobridge.de/og/de-marketing-agencies.png"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta property="og:image:alt" content="Mehr Raum für die Arbeit, die Kunden wirklich bemerken."/> <meta property="og:locale" content="de_DE"/> <!--[-1--><!--]--> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://dinobridge.de/de/"},{"@type":"ListItem","position":2,"name":"Für Marketingagenturen"}]}</script><!----><!----><title>KI-Systeme für Marketingagenturen — Dinobridge</title>
+		<link href="/_app/immutable/assets/0.CGk9dsc6.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/Footer.CLZBX19I.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/MarketingAgenciesPage.CDBWBsg2.css" rel="stylesheet">
+		<!-- No analytics beacon here, deliberately, and it must stay that way while
+		     the copy says what it currently says.
+
+		     The Cloudflare Web Analytics snippet used to sit here. It was a sound
+		     choice on its own terms — cookieless, no localStorage, so no consent
+		     banner under TDDDG §25 — but three places on this site state flatly
+		     that there is no analytics at all:
+
+		       src/routes/datenschutz/+page.svelte  "nutzt keine Analyse-Dienste"
+		       src/lib/copy/en.js  security.stack   "no cookies, no analytics"
+		       src/lib/copy/de.js  security.stack   "keine Cookies, keine Analyse"
+
+		     The first of those is the Datenschutzerklärung, so the mismatch was an
+		     Art. 13 DSGVO disclosure gap and an affirmative denial of a processing
+		     activity that was happening. On a site whose security page is the
+		     document a general counsel reads, a claim a visitor can disprove from
+		     the network tab is worse than having no metric.
+
+		     Traffic is still visible: Cloudflare's zone analytics are server-side,
+		     need no beacon, and report requests, bandwidth, countries and cache
+		     ratio without anything running in the visitor's browser.
+
+		     To bring client-side analytics back, all three claims above have to
+		     change first and the Datenschutzerklärung needs its own section naming
+		     the processor and its legal basis. Re-adding the script alone puts the
+		     site back into a false statement. -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><div class="doc marketing-doc svelte-1orvci7" style="--sector: #e79bd6"><header class="doc-top"><div class="doc-bar"><a class="doc-back" href="/de/"><img class="logo-h" src="/brand/dinobridge-horizontal-compact.svg" alt="Dinobridge — Startseite" height="32"/></a> <span class="doc-end"><span class="doc-lang"><!--[-1--><a href="/for-marketing-agencies/" data-sveltekit-reload="">EN</a><span aria-current="true">DE</span><!--]--></span> <button class="theme-toggle" type="button" data-theme-toggle="" aria-label="Farbschema wechseln"><span class="tt-to-light">Hell</span><span class="tt-to-dark">Dunkel</span></button><!----></span></div> <p class="meta">Für Marketingagenturen</p> <h1>Mehr Raum für die Arbeit, die Kunden wirklich bemerken.</h1> <!--[--><p class="doc-intro">Eine Agentur braucht kein weiteres Chatfenster. Sie braucht einen verlässlichen Weg für alles, was in der Auslieferung auseinanderfällt: Briefings, Recherche, Quellen, Varianten, Freigaben und Reporting.</p><p class="doc-intro">Wir finden die wiederholbare Arbeit rund um die kreative Entscheidung, bauen diesen Teil in Ihren eigenen Werkzeugen auf und lassen Strategie, Geschmack und Kundenbeziehung genau dort, wo sie hingehören: bei Ihrem Team.</p><!--]--></header><!----> <figure class="hero-art svelte-1orvci7"><img src="/media/marketing-agencies-hero.webp" alt="Ein abstrakter Kampagnenablauf, der verstreutes Ausgangsmaterial in ein klares freigegebenes Ergebnis verwandelt" width="1792" height="896" class="svelte-1orvci7"/> <figcaption class="meta svelte-1orvci7">Von verstreuten Eingaben zu einem prüfbaren Kampagnensystem.</figcaption></figure> <section><h2>Wo Agenturzeit verschwindet.</h2> <div><p class="doc-lead">Der teure Teil ist selten die erste Idee. Es ist alles, was jedes Mal um sie herum passieren muss, ohne dass der Faden verloren geht.</p> <ul class="agency-grid svelte-1orvci7"><!--[--><li class="svelte-1orvci7"><span class="meta svelte-1orvci7">01</span> <h3 class="svelte-1orvci7">Das Briefing wechselt die Form.</h3> <p>Calls, Decks, E-Mails und Kommentare werden zu einem Arbeitsbriefing, in dem offene Fragen vor Produktionsbeginn sichtbar sind.</p></li><li class="svelte-1orvci7"><span class="meta svelte-1orvci7">02</span> <h3 class="svelte-1orvci7">Recherche wird wiederholt.</h3> <p>Zielgruppen-, Wettbewerbs- und Marktmaterial wird mit Quellen gesammelt und bleibt für den nächsten Pitch nutzbar.</p></li><li class="svelte-1orvci7"><span class="meta svelte-1orvci7">03</span> <h3 class="svelte-1orvci7">Versionen vermehren sich.</h3> <p>Kanal- und Formatvarianten entstehen aus freigegebenem Ausgangstext, mit einer klaren Spur aller Änderungen und Freigaben.</p></li><li class="svelte-1orvci7"><span class="meta svelte-1orvci7">04</span> <h3 class="svelte-1orvci7">Reporting beginnt bei null.</h3> <p>Die wöchentlichen Nachweise werden laufend gesammelt, Ausreißer markiert, und das Team schreibt die Erklärung statt die Zahlen neu aufzubauen.</p></li><!--]--></ul></div></section> <section><h2>Eine ruhige Produktionslinie.</h2> <div><p class="doc-lead">Das erste nützliche System ist meistens kleiner als eine „KI-Transformation“ und wertvoller als eine Sammlung von Prompts.</p> <ol class="flow svelte-1orvci7"><!--[--><li class="svelte-1orvci7"><span class="step-no svelte-1orvci7">01</span> <div><h3>Sammeln</h3><p>Briefing, Quelldateien, frühere Arbeiten und Kundenregeln kommen in einen nachvollziehbaren Eingang.</p></div></li><li class="svelte-1orvci7"><span class="step-no svelte-1orvci7">02</span> <div><h3>Strukturieren</h3><p>Fakten, Grenzen, Zielgruppen, Aussagen und fehlende Entscheidungen werden herausgezogen; jeder Fakt bleibt mit seiner Quelle verbunden.</p></div></li><li class="svelte-1orvci7"><span class="step-no svelte-1orvci7">03</span> <div><h3>Vorbereiten</h3><p>Rechercheübersichten, erste Entwürfe und Kanalvarianten entstehen nur innerhalb der vom Team freigegebenen Regeln.</p></div></li><li class="svelte-1orvci7"><span class="step-no svelte-1orvci7">04</span> <div><h3>Prüfen</h3><p>Jede wesentliche Änderung geht an eine benannte Person. Nichts wird von selbst veröffentlicht, versendet oder budgetiert.</p></div></li><li class="svelte-1orvci7"><span class="step-no svelte-1orvci7">05</span> <div><h3>Lernen</h3><p>Freigegebene Sprache, verworfene Richtungen und Kampagnennachweise bleiben für die nächste Arbeit verfügbar.</p></div></li><!--]--></ol></div></section> <section><h2>Die Grenze, die wir nicht überschreiten.</h2> <div class="boundary svelte-1orvci7"><p class="doc-lead">KI kann das Feld vorbereiten. Sie kann die Position nicht besitzen.</p> <ul class="doc-list"><!--[--><li>Keine erfundene Kundenerkenntnis, Leistungsbehauptung, Zitate oder Quellen.</li><li>Keine Veröffentlichung, Kundenantwort oder Budgetänderung ohne benannte menschliche Freigabe.</li><li>Kein System, das einzelne Kreative bewertet oder Aktivität überwacht.</li><li>Kein Modell, das mit vertraulichem Material eines Kunden für einen anderen Kunden trainiert wird.</li><li>Strategie, Geschmack, Verantwortung und Kundenbeziehung bleiben bei Ihren Leuten.</li><!--]--></ul></div></section> <section><h2>Gute Ausgangspunkte.</h2> <div><p class="doc-lead">Nehmen Sie eine wiederkehrende Übergabe mit sichtbaren Kosten. Wir zeichnen sie auf, testen sie an jüngster Arbeit und messen vorher und nachher dasselbe.</p> <ul class="start-list svelte-1orvci7"><!--[--><li class="svelte-1orvci7"><strong class="svelte-1orvci7">Briefing-Eingang</strong><span class="svelte-1orvci7">Aus gemischtem Kundenmaterial werden ein vollständiges Arbeitsbriefing und eine Liste offener Entscheidungen.</span></li><li class="svelte-1orvci7"><strong class="svelte-1orvci7">Recherche-Desk</strong><span class="svelte-1orvci7">Quellenbasierte Markt- und Wettbewerbsbeobachtung, die zwischen Pitches aktuell bleibt.</span></li><li class="svelte-1orvci7"><strong class="svelte-1orvci7">Content Operations</strong><span class="svelte-1orvci7">Freigegebener Ausgangstext wird in Kanalvarianten, Prüfung und Versionshistorie geführt.</span></li><li class="svelte-1orvci7"><strong class="svelte-1orvci7">Kundenreporting</strong><span class="svelte-1orvci7">Nachweise werden planmäßig gesammelt und Ausnahmen für die Einordnung durch eine Strategin markiert.</span></li><!--]--></ul></div></section> <section class="cta"><h2>Bringen Sie uns eine chaotische Übergabe.</h2> <div><p class="doc-lead">Dreißig Minuten, kostenlos, ohne Deck. Zeigen Sie uns, wo die Arbeit stockt; wir sagen Ihnen, ob KI etwas ändert, was menschlich bleiben muss und wie ein sinnvoller erster Test aussieht.</p> <div class="doc-row"><a class="btn btn-primary" href="https://cal.com/mohaaghanouri/discovery-call" rel="noopener">30-Minuten-Gespräch vereinbaren</a> <a class="btn" href="/de/#contact">Oder schreiben Sie uns</a> <a class="btn" href="/de/method/">Wie wir entscheiden, was wir bauen</a></div></div></section> <footer class="foot svelte-9sff3o"><p class="brand svelte-9sff3o"><img class="logo-m svelte-9sff3o" src="/brand/dinobridge-mark-icon.svg" alt="" height="24"/> <span>© Dinobridge, Silbersteinstraße 131, 12051 Berlin</span></p> <nav class="pages svelte-9sff3o" aria-label="Menü"><!--[--><a href="/de/fuer-unternehmen/" class="svelte-9sff3o">Für Unternehmen</a><a href="/de/fuer-einzelpersonen/" class="svelte-9sff3o">Für Einzelpersonen</a><a href="/de/fuer-kanzleien/" class="svelte-9sff3o">Für Kanzleien</a><a href="/de/fuer-marketingagenturen/" class="svelte-9sff3o">Für Marketingagenturen</a><a href="/de/sicherheit/" class="svelte-9sff3o">Sicherheit</a><a href="/de/ueber-uns/" class="svelte-9sff3o">Über uns</a><!--]--></nav> <p class="links svelte-9sff3o"><a href="mailto:connect@dinobridge.de" class="svelte-9sff3o">connect@dinobridge.de</a> <!--[--><a href="https://www.linkedin.com/in/mohanuri" rel="me noopener" class="svelte-9sff3o">LinkedIn</a><!--]--> <a href="/impressum/" class="svelte-9sff3o">Impressum</a> <a href="/datenschutz/" class="svelte-9sff3o">Datenschutz</a></p></footer><!----></div><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]--></div>
+	</body>
+</html>

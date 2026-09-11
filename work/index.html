@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<!-- Google's favicon crawler wants a square icon that is a multiple of 48px;
+		     favicon.ico only carries 16 and 32. -->
+		<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0b1428" />
+		<meta name="color-scheme" content="dark light" />
+		<!-- Colour theme. Dark (ink) is the default and needs no attribute; a
+		     visitor who chose light gets data-theme="light" before first paint.
+		     The click handler is delegated so the toggle works on the pages that
+		     ship no JavaScript bundle. The choice lives in localStorage, on the
+		     visitor's own click only — the Datenschutzerklärung says so. -->
+		<script>
+			(function () {
+				var d = document.documentElement;
+				var t = null;
+				try { t = localStorage.getItem('theme'); } catch (e) {}
+				if (t === 'light') d.setAttribute('data-theme', 'light');
+				document.addEventListener('click', function (e) {
+					if (!e.target.closest('[data-theme-toggle]')) return;
+					var light = d.getAttribute('data-theme') !== 'light';
+					if (light) d.setAttribute('data-theme', 'light'); else d.removeAttribute('data-theme');
+					try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#12264a' : '#0b1428');
+				});
+			})();
+		</script>
+		<!--1rv2z8a--><meta name="description" content="Real examples of AI inside businesses, startups and research groups: startups, company departments, research groups, architecture practices, law firms, marketing agencies, real estate and non-profits. Set up by Dinobridge, AI consulting in Berlin."/> <link rel="canonical" href="https://dinobridge.de/work/"/> <link rel="alternate" hreflang="en" href="https://dinobridge.de/work/"/> <link rel="alternate" hreflang="de" href="https://dinobridge.de/de/work/"/> <link rel="alternate" hreflang="x-default" href="https://dinobridge.de/work/"/> <meta property="og:type" content="website"/> <meta property="og:title" content="Real examples — Dinobridge"/> <meta property="og:description" content="Real examples of AI inside businesses, startups and research groups: startups, company departments, research groups, architecture practices, law firms, marketing agencies, real estate and non-profits. Set up by Dinobridge, AI consulting in Berlin."/> <meta name="twitter:card" content="summary_large_image"/> <meta property="og:url" content="https://dinobridge.de/work/"/> <meta property="og:image" content="https://dinobridge.de/og/work.png"/> <meta property="og:locale" content="en_US"/> <!--[-1--><!--]--> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dinobridge.de/"},{"@type":"ListItem","position":2,"name":"Real examples"}]}</script><!----><!----><title>Real examples — Dinobridge</title>
+		<link href="/_app/immutable/assets/0.CGk9dsc6.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/Footer.CLZBX19I.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/WorkIndex.BycJheYb.css" rel="stylesheet">
+		<!-- No analytics beacon here, deliberately, and it must stay that way while
+		     the copy says what it currently says.
+
+		     The Cloudflare Web Analytics snippet used to sit here. It was a sound
+		     choice on its own terms — cookieless, no localStorage, so no consent
+		     banner under TDDDG §25 — but three places on this site state flatly
+		     that there is no analytics at all:
+
+		       src/routes/datenschutz/+page.svelte  "nutzt keine Analyse-Dienste"
+		       src/lib/copy/en.js  security.stack   "no cookies, no analytics"
+		       src/lib/copy/de.js  security.stack   "keine Cookies, keine Analyse"
+
+		     The first of those is the Datenschutzerklärung, so the mismatch was an
+		     Art. 13 DSGVO disclosure gap and an affirmative denial of a processing
+		     activity that was happening. On a site whose security page is the
+		     document a general counsel reads, a claim a visitor can disprove from
+		     the network tab is worse than having no metric.
+
+		     Traffic is still visible: Cloudflare's zone analytics are server-side,
+		     need no beacon, and report requests, bandwidth, countries and cache
+		     ratio without anything running in the visitor's browser.
+
+		     To bring client-side analytics back, all three claims above have to
+		     change first and the Datenschutzerklärung needs its own section naming
+		     the processor and its legal basis. Re-adding the script alone puts the
+		     site back into a false statement. -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><div class="wrap svelte-1rv2z8a"><header class="top svelte-1rv2z8a"><div class="bar svelte-1rv2z8a"><a class="back svelte-1rv2z8a" href="/"><img class="logo-h svelte-1rv2z8a" src="/brand/dinobridge-horizontal-compact.svg" alt="Dinobridge — Home" height="32"/></a> <span class="bar-end svelte-1rv2z8a"><span class="lang svelte-1rv2z8a"><!--[0--><span aria-current="true" class="svelte-1rv2z8a">EN</span><a href="/de/work/" data-sveltekit-reload="" class="svelte-1rv2z8a">DE</a><!--]--></span> <button class="theme-toggle" type="button" data-theme-toggle="" aria-label="Switch colour theme"><span class="tt-to-light">Light</span><span class="tt-to-dark">Dark</span></button><!----></span></div> <p class="meta">Real examples</p> <h1 class="svelte-1rv2z8a">What AI already does inside teams like yours.</h1> <p class="intro svelte-1rv2z8a">Every example here is something we designed and ran ourselves, inside a real business or team with real deadlines. Each one shows what changed, what stayed with the people, and where we drew the line. Pick the one closest to your work.</p></header> <section class="evidence svelte-1rv2z8a"><p class="meta">Evidence</p> <h2 class="group-title svelte-1rv2z8a">What we have actually built.</h2> <ol class="ledger svelte-1rv2z8a"><!--[--><li class="svelte-1rv2z8a"><div><h3 class="svelte-1rv2z8a">A contract system for a commercial law firm</h3> <p class="svelte-1rv2z8a">Contracts filed and versioned the moment they arrive, every deadline in the diary, and each incoming draft opening in Word with tracked changes where every suggestion carries its reason. There is no accept-all button — we were asked for one and refused.</p> <!--[0--><a class="ledger-link svelte-1rv2z8a" href="/work/lawyers/">Read the case</a><!--]--></div></li><li class="svelte-1rv2z8a"><div><h3 class="svelte-1rv2z8a">A production contract-lifecycle platform for a corporate legal team</h3> <p class="svelte-1rv2z8a">Conversational intake, an in-app agentic copilot, and a Microsoft Word add-in producing native tracked-change redlines. Every AI action runs as the signed-in user, so it inherits the same permissions and the same audit trail as a human request, behind a confirm gate that pauses every change for approval. It replaced a commercial vendor costing about €70,000 a year. Built by our owner as an in-house AI engineer — the work that taught us what survives an audit.</p> <!--[0--><a class="ledger-link svelte-1rv2z8a" href="https://www.linkedin.com/in/mohanuri" rel="me noopener">The record, on LinkedIn</a><!--]--></div></li><li class="svelte-1rv2z8a"><div><h3 class="svelte-1rv2z8a">A customer-service assistant live across six markets</h3> <p class="svelte-1rv2z8a">About 45% of first-line contacts resolved without a human, with prompts and model configuration versioned so a change ships by moving a label rather than redeploying. Also in-house work, at a Berlin company.</p> <!--[0--><a class="ledger-link svelte-1rv2z8a" href="https://www.linkedin.com/in/mohanuri" rel="me noopener">The record, on LinkedIn</a><!--]--></div></li><li class="svelte-1rv2z8a"><div><h3 class="svelte-1rv2z8a">Client work across many fields</h3> <p class="svelte-1rv2z8a">Startup founders and company directors, heads of department inside larger companies, research groups, architecture practices, marketing agencies, a law firm, a real estate company and an NGO.</p> <!--[0--><a class="ledger-link svelte-1rv2z8a" href="/work/">All examples</a><!--]--></div></li><!--]--></ol> <p class="ledger-note svelte-1rv2z8a">We say which is which. The client engagements on this site are separate from the systems our owner built as an employee, no client’s material has ever touched another engagement, and we do not publish a number we cannot source.</p></section> <section class="group svelte-1rv2z8a"><ul class="cases svelte-1rv2z8a"><!--[--><li class="svelte-1rv2z8a"><a href="/work/lawyers/" class="svelte-1rv2z8a"><div class="body svelte-1rv2z8a"><h3 class="svelte-1rv2z8a">Lawyers</h3> <p class="svelte-1rv2z8a">The firm’s own positions, applied to every draft that arrives.</p></div></a></li><li class="svelte-1rv2z8a"><a href="/work/architects/" class="svelte-1rv2z8a"><div class="body svelte-1rv2z8a"><h3 class="svelte-1rv2z8a">Architects</h3> <p class="svelte-1rv2z8a">The paperwork gets done the same day. The design and the compliance call stay with you.</p></div></a></li><li class="svelte-1rv2z8a"><a href="/work/research/" class="svelte-1rv2z8a"><div class="body svelte-1rv2z8a"><h3 class="svelte-1rv2z8a">Research</h3> <p class="svelte-1rv2z8a">Two professors went from almost no research time to eight to twelve hours a week.</p></div></a></li><li class="svelte-1rv2z8a"><a href="/work/team-leaders/" class="svelte-1rv2z8a"><div class="body svelte-1rv2z8a"><h3 class="svelte-1rv2z8a">Team leaders</h3> <p class="svelte-1rv2z8a">It remembers what you noticed. It never rates anyone.</p></div></a></li><li class="svelte-1rv2z8a"><a href="/work/estate-agents/" class="svelte-1rv2z8a"><div class="body svelte-1rv2z8a"><h3 class="svelte-1rv2z8a">Estate agents</h3> <p class="svelte-1rv2z8a">Answer the eight real buyers first, not all ninety.</p></div></a></li><li class="svelte-1rv2z8a"><a href="/work/volunteer-orgs/" class="svelte-1rv2z8a"><div class="body svelte-1rv2z8a"><h3 class="svelte-1rv2z8a">Non-profits</h3> <p class="svelte-1rv2z8a">Grant applications in three hours instead of two days, on free tools.</p></div></a></li><li class="svelte-1rv2z8a"><a href="/work/executives/" class="svelte-1rv2z8a"><div class="body svelte-1rv2z8a"><h3 class="svelte-1rv2z8a">Executives</h3> <p class="svelte-1rv2z8a">Nothing the company agreed to sits only in somebody’s memory.</p></div></a></li><!--]--></ul></section> <section class="cta svelte-1rv2z8a"><p class="meta">Get in touch</p> <h2 class="cta-title svelte-1rv2z8a">Tell us what you are dealing with.</h2> <p class="lead svelte-1rv2z8a">Thirty minutes, free, no preparation. We tell you honestly where AI could change something for you, and where it would not.</p> <div class="row svelte-1rv2z8a"><a class="btn btn-primary" href="https://cal.com/mohaaghanouri/discovery-call" rel="noopener">Book a 30-minute call</a> <a class="btn" href="/#contact">Or write to us</a></div></section> <footer class="foot svelte-9sff3o"><p class="brand svelte-9sff3o"><img class="logo-m svelte-9sff3o" src="/brand/dinobridge-mark-icon.svg" alt="" height="24"/> <span>© Dinobridge, Silbersteinstraße 131, 12051 Berlin</span></p> <nav class="pages svelte-9sff3o" aria-label="Menu"><!--[--><a href="/for-businesses/" class="svelte-9sff3o">For businesses</a><a href="/for-individuals/" class="svelte-9sff3o">For individuals</a><a href="/for-law-firms/" class="svelte-9sff3o">For law firms</a><a href="/for-marketing-agencies/" class="svelte-9sff3o">For marketing agencies</a><a href="/security/" class="svelte-9sff3o">Security</a><a href="/about/" class="svelte-9sff3o">About us</a><!--]--></nav> <p class="links svelte-9sff3o"><a href="mailto:connect@dinobridge.de" class="svelte-9sff3o">connect@dinobridge.de</a> <!--[--><a href="https://www.linkedin.com/in/mohanuri" rel="me noopener" class="svelte-9sff3o">LinkedIn</a><!--]--> <a href="/impressum/" class="svelte-9sff3o">Impressum</a> <a href="/datenschutz/" class="svelte-9sff3o">Datenschutz</a></p></footer><!----></div><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]--></div>
+	</body>
+</html>

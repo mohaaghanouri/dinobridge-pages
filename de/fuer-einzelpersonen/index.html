@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<!-- Google's favicon crawler wants a square icon that is a multiple of 48px;
+		     favicon.ico only carries 16 and 32. -->
+		<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0b1428" />
+		<meta name="color-scheme" content="dark light" />
+		<!-- Colour theme. Dark (ink) is the default and needs no attribute; a
+		     visitor who chose light gets data-theme="light" before first paint.
+		     The click handler is delegated so the toggle works on the pages that
+		     ship no JavaScript bundle. The choice lives in localStorage, on the
+		     visitor's own click only — the Datenschutzerklärung says so. -->
+		<script>
+			(function () {
+				var d = document.documentElement;
+				var t = null;
+				try { t = localStorage.getItem('theme'); } catch (e) {}
+				if (t === 'light') d.setAttribute('data-theme', 'light');
+				document.addEventListener('click', function (e) {
+					if (!e.target.closest('[data-theme-toggle]')) return;
+					var light = d.getAttribute('data-theme') !== 'light';
+					if (light) d.setAttribute('data-theme', 'light'); else d.removeAttribute('data-theme');
+					try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#12264a' : '#0b1428');
+				});
+			})();
+		</script>
+		<!--m1ljtr--><meta name="description" content="Für alle, die einen KI-Experten an ihrer Seite brauchen könnten, ohne ein Unternehmen zu führen: eine Entscheidung, eine Idee, eine Gründung, eine Fähigkeit, ein Kind. Beratung, Hilfe beim Machen und Bauen, in klarer Sprache, zum schriftlich vereinbarten Festpreis. Das Erstgespräch ist kostenlos."/> <link rel="canonical" href="https://dinobridge.de/de/fuer-einzelpersonen/"/> <link rel="alternate" hreflang="en" href="https://dinobridge.de/for-individuals/"/> <link rel="alternate" hreflang="de" href="https://dinobridge.de/de/fuer-einzelpersonen/"/> <link rel="alternate" hreflang="x-default" href="https://dinobridge.de/for-individuals/"/> <meta property="og:type" content="article"/> <meta property="og:title" content="Ein KI-Experte für eine Person — Dinobridge"/> <meta property="og:description" content="Für alle, die einen KI-Experten an ihrer Seite brauchen könnten, ohne ein Unternehmen zu führen: eine Entscheidung, eine Idee, eine Gründung, eine Fähigkeit, ein Kind. Beratung, Hilfe beim Machen und Bauen, in klarer Sprache, zum schriftlich vereinbarten Festpreis. Das Erstgespräch ist kostenlos."/> <meta name="twitter:card" content="summary_large_image"/> <meta property="og:url" content="https://dinobridge.de/de/fuer-einzelpersonen/"/> <meta property="og:image" content="https://dinobridge.de/og/de-home.png"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta property="og:image:alt" content="Ein KI-Experte an Ihrer Seite, für das, was vor Ihnen liegt."/> <meta property="og:locale" content="de_DE"/> <!--[-1--><!--]--> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://dinobridge.de/de/"},{"@type":"ListItem","position":2,"name":"Für Einzelpersonen"}]}</script><!----><!----><title>Ein KI-Experte für eine Person — Dinobridge</title>
+		<link href="/_app/immutable/assets/0.CGk9dsc6.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/Footer.CLZBX19I.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/IndividualsPage.BwpNofvP.css" rel="stylesheet">
+		<!-- No analytics beacon here, deliberately, and it must stay that way while
+		     the copy says what it currently says.
+
+		     The Cloudflare Web Analytics snippet used to sit here. It was a sound
+		     choice on its own terms — cookieless, no localStorage, so no consent
+		     banner under TDDDG §25 — but three places on this site state flatly
+		     that there is no analytics at all:
+
+		       src/routes/datenschutz/+page.svelte  "nutzt keine Analyse-Dienste"
+		       src/lib/copy/en.js  security.stack   "no cookies, no analytics"
+		       src/lib/copy/de.js  security.stack   "keine Cookies, keine Analyse"
+
+		     The first of those is the Datenschutzerklärung, so the mismatch was an
+		     Art. 13 DSGVO disclosure gap and an affirmative denial of a processing
+		     activity that was happening. On a site whose security page is the
+		     document a general counsel reads, a claim a visitor can disprove from
+		     the network tab is worse than having no metric.
+
+		     Traffic is still visible: Cloudflare's zone analytics are server-side,
+		     need no beacon, and report requests, bandwidth, countries and cache
+		     ratio without anything running in the visitor's browser.
+
+		     To bring client-side analytics back, all three claims above have to
+		     change first and the Datenschutzerklärung needs its own section naming
+		     the processor and its legal basis. Re-adding the script alone puts the
+		     site back into a false statement. -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><div class="doc"><header class="doc-top" style="view-transition-name: door-individual;"><div class="doc-bar"><a class="doc-back" href="/de/"><img class="logo-h" src="/brand/dinobridge-horizontal-compact.svg" alt="Dinobridge — Startseite" height="32"/></a> <span class="doc-end"><span class="doc-lang"><!--[-1--><a href="/for-individuals/" data-sveltekit-reload="">EN</a><span aria-current="true">DE</span><!--]--></span> <button class="theme-toggle" type="button" data-theme-toggle="" aria-label="Farbschema wechseln"><span class="tt-to-light">Hell</span><span class="tt-to-dark">Dunkel</span></button><!----></span></div> <p class="meta">Für Einzelpersonen</p> <h1>Ein KI-Experte an Ihrer Seite, für das, was vor Ihnen liegt.</h1> <!--[--><p class="doc-intro">Das meiste, was über KI geschrieben wird, ist für Unternehmen geschrieben. Die meisten Entscheidungen, bei denen sie helfen könnte, trifft eine einzelne Person: was mit einer großen Summe Geld geschehen soll, ob eine Idee ein Jahr Ihres Lebens wert ist, wie man das Unternehmen gründet, von dem Sie immer reden, in welche Ihrer Fähigkeiten Sie als Nächstes investieren, was Sie Ihrem Kind über eine Technik sagen, die sein Arbeitsleben prägen wird.</p><p class="doc-intro">Dinobridge gibt Ihnen denselben Experten, den ein Unternehmen bekommt, auf eine Person zugeschnitten. Sie bringen die Frage. Wir bringen, was KI dazu kann und nicht kann, in klarer Sprache, ohne ein eigenes Produkt, das wir Ihnen verkaufen wollen — und wo sie hilft, sorgen wir dafür, dass Sie sie danach selbst nutzen können.</p><!--]--></header><!----> <section><h2>Drei Wege, mit uns zu arbeiten.</h2> <ol class="doc-rows"><!--[--><li><div><h3 class="lane svelte-1et4i9a">Beraten</h3> <p>Sie bringen die Frage — eine Entscheidung, einen Plan, eine Idee, den nächsten Schritt in Ihrer Arbeit. Wir bringen, was KI dazu kann und nicht kann, in klarer Sprache, und eine klare Empfehlung, mit der Sie noch am selben Tag etwas anfangen können. Eine Sitzung, oder ein paar.</p></div></li><li><div><h3 class="lane svelte-1et4i9a">Einführen</h3> <p>Ihre eigenen Werkzeuge, in Ihren eigenen Konten, eingerichtet für das, was Sie tatsächlich tun — und Sie lernen, damit zu arbeiten, in Ihrem Tempo, an Ihrem eigenen Material. Dazu gehört auch, einem Kind zu zeigen, wie das funktioniert und wo es sich irrt, auf seiner Höhe, mit den Hausregeln dazu.</p></div></li><li><div><h3 class="lane svelte-1et4i9a">Bauen</h3> <p>Ein Prototyp, den Sie einer Mitgründerin oder einem Investor zeigen können, ein Werkzeug, das Sie jeden Tag benutzen, die erste Version der Plattform hinter dem Unternehmen, das Sie gründen. Angeboten, nachdem wir es verstanden haben, gebaut in Ihren Konten, und Ihres ab der ersten Zeile Code.</p></div></li><!--]--></ol></section> <section><h2>Wer schon durch diese Tür gekommen ist.</h2> <p class="doc-lead">Menschen, die ohne ein Unternehmen im Rücken kamen, sortiert nach dem, womit sie kamen.</p> <ul class="doc-rows record"><!--[--><li><div><h3>Jobsuchende</h3> <p>Bewerbungen und Gespräche für Menschen, die die Antworten nicht mehr geöffnet haben. Die meisten von ihnen sind über diesen Weg in Arbeit.</p></div></li><li><div><h3>Sportlerinnen &amp; Sportler</h3> <p>Halbprofis, die noch am selben Abend ein Video brauchten, das ein Scout öffnet, und ein Trainingslog, das sie tatsächlich geführt haben.</p></div></li><li><div><h3>Immobilienkäufer</h3> <p>Weniger Wohnungen statt mehr: eine Auswahl, die zu den echten Kriterien passt, und die Unterlagen vor der Besichtigung gelesen statt danach.</p></div></li><li><div><h3>Lehrkräfte</h3> <p>Korrektur und Zeugniszeit auf Abende gekürzt. Das Werkzeug findet den Beleg; die Lehrkraft gibt die Note.</p></div></li><li><div><h3>Coaches &amp; Yogalehrende</h3> <p>Ein-Personen-Studios. Bei drei von fünf lautete die ehrliche Antwort: ein Buchungssystem, keine KI — und das haben wir gesagt.</p></div></li><li><div><h3>Online-Käufer</h3> <p>Der kleinste Auftrag auf dieser Liste. Gekündigte Abos und rechtzeitige Rücksendungen haben das Honorar binnen eines Monats bezahlt.</p></div></li><!--]--></ul></section> <section><h2>So läuft es ab.</h2> <ol class="doc-list steps"><!--[--><li>Sie buchen ein kostenloses 30-Minuten-Gespräch oder schreiben uns. Keine Vorbereitung; ein paar Sätze dazu, womit Sie es zu tun haben, genügen.</li><li>Wir sagen Ihnen ehrlich, ob KI hier etwas verändert. Etwa jedes dritte Mal lautet die Antwort nein, und Sie gehen mit einer Empfehlung statt eines Angebots.</li><li>Wenn ja, bekommen Sie einen Festpreis schriftlich, bevor etwas beginnt: für eine Sitzung, eine Reihe davon oder einen Bau. Kein laufender Zähler.</li><li>Wir treffen uns per Video oder persönlich in Berlin. Alles, was wir einrichten, läuft in Ihren eigenen Konten und auf Ihren eigenen Geräten und bleibt Ihres.</li><!--]--></ol></section> <section><h2>Was bei Ihnen bleibt.</h2> <ul class="doc-list"><!--[--><li>Die Entscheidung. Wir legen die Optionen aus und was KI über jede davon herausfinden kann. Sie wählen.</li><li>Ihr Geld. Wir sind keine Finanz-, Rechts- oder Gesundheitsberater, und wir sagen es in dem Moment, in dem eine Frage in dieses Gebiet reicht.</li><li>Ihre Daten. Nichts von Ihnen liegt auf irgendetwas von uns.</li><li>Die Fähigkeit. Sie gehen so, dass Sie das nächste Mal ohne uns können, wenn Sie das wollen.</li><!--]--></ul></section> <section><h2>Was wir nicht tun werden.</h2> <ul class="doc-list"><!--[--><li>Ihnen sagen, welches Haus Sie kaufen, welche Anlage Sie wählen oder welchen Vertrag Sie unterschreiben sollen. Wir zeigen Ihnen, wie Sie schneller mehr herausfinden und wie Sie prüfen, was ein Modell Ihnen sagt, bevor Sie sich darauf verlassen.</li><li>Die Hausaufgaben eines Kindes machen oder ein Kind mit einem Chatbot allein lassen. Wir zeigen, wie er funktioniert, wo er sich irrt und wie man ihn gut nutzt — mit dem Erwachsenen im Raum.</li><li>Ihnen ein Abo, einen Kurs oder eine Plattform von uns verkaufen. Es gibt keine.</li><li>Eine Frage annehmen, bei der KI nichts beiträgt. Das hören Sie im Erstgespräch, kostenlos.</li><!--]--></ul></section> <section class="cta"><h2>Erzählen Sie uns, womit Sie es zu tun haben.</h2> <div><p class="doc-lead">Dreißig Minuten, kostenlos, ohne Vorbereitung. Wir sagen Ihnen ehrlich, wo KI für Sie etwas verändern könnte und wo nicht.</p> <div class="doc-row"><a class="btn btn-primary" href="https://cal.com/mohaaghanouri/discovery-call" rel="noopener">30-Minuten-Gespräch vereinbaren</a> <a class="btn" href="/de/#contact">Oder schreiben Sie uns</a> <a class="btn" href="/de/fuer-unternehmen/">Für Unternehmen</a></div></div></section> <footer class="foot svelte-9sff3o"><p class="brand svelte-9sff3o"><img class="logo-m svelte-9sff3o" src="/brand/dinobridge-mark-icon.svg" alt="" height="24"/> <span>© Dinobridge, Silbersteinstraße 131, 12051 Berlin</span></p> <nav class="pages svelte-9sff3o" aria-label="Menü"><!--[--><a href="/de/fuer-unternehmen/" class="svelte-9sff3o">Für Unternehmen</a><a href="/de/fuer-einzelpersonen/" class="svelte-9sff3o">Für Einzelpersonen</a><a href="/de/fuer-kanzleien/" class="svelte-9sff3o">Für Kanzleien</a><a href="/de/fuer-marketingagenturen/" class="svelte-9sff3o">Für Marketingagenturen</a><a href="/de/sicherheit/" class="svelte-9sff3o">Sicherheit</a><a href="/de/ueber-uns/" class="svelte-9sff3o">Über uns</a><!--]--></nav> <p class="links svelte-9sff3o"><a href="mailto:connect@dinobridge.de" class="svelte-9sff3o">connect@dinobridge.de</a> <!--[--><a href="https://www.linkedin.com/in/mohanuri" rel="me noopener" class="svelte-9sff3o">LinkedIn</a><!--]--> <a href="/impressum/" class="svelte-9sff3o">Impressum</a> <a href="/datenschutz/" class="svelte-9sff3o">Datenschutz</a></p></footer><!----></div><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]--></div>
+	</body>
+</html>

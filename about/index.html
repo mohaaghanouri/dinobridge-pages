@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<!-- Google's favicon crawler wants a square icon that is a multiple of 48px;
+		     favicon.ico only carries 16 and 32. -->
+		<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0b1428" />
+		<meta name="color-scheme" content="dark light" />
+		<!-- Colour theme. Dark (ink) is the default and needs no attribute; a
+		     visitor who chose light gets data-theme="light" before first paint.
+		     The click handler is delegated so the toggle works on the pages that
+		     ship no JavaScript bundle. The choice lives in localStorage, on the
+		     visitor's own click only — the Datenschutzerklärung says so. -->
+		<script>
+			(function () {
+				var d = document.documentElement;
+				var t = null;
+				try { t = localStorage.getItem('theme'); } catch (e) {}
+				if (t === 'light') d.setAttribute('data-theme', 'light');
+				document.addEventListener('click', function (e) {
+					if (!e.target.closest('[data-theme-toggle]')) return;
+					var light = d.getAttribute('data-theme') !== 'light';
+					if (light) d.setAttribute('data-theme', 'light'); else d.removeAttribute('data-theme');
+					try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#12264a' : '#0b1428');
+				});
+			})();
+		</script>
+		<!--m1ljtr--><meta name="description" content="Professional engineering behind the company, building production AI systems other people depend on. What you are actually hiring when you hire Dinobridge."/> <link rel="canonical" href="https://dinobridge.de/about/"/> <link rel="alternate" hreflang="en" href="https://dinobridge.de/about/"/> <link rel="alternate" hreflang="de" href="https://dinobridge.de/de/ueber-uns/"/> <link rel="alternate" hreflang="x-default" href="https://dinobridge.de/about/"/> <meta property="og:type" content="article"/> <meta property="og:title" content="What stands behind Dinobridge"/> <meta property="og:description" content="Professional engineering behind the company, building production AI systems other people depend on. What you are actually hiring when you hire Dinobridge."/> <meta name="twitter:card" content="summary_large_image"/> <meta property="og:url" content="https://dinobridge.de/about/"/> <meta property="og:image" content="https://dinobridge.de/og/home.png"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta property="og:image:alt" content="What stands behind Dinobridge."/> <meta property="og:locale" content="en_US"/> <!--[-1--><!--]--> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dinobridge.de/"},{"@type":"ListItem","position":2,"name":"About us"}]}</script><!----><!----><title>What stands behind Dinobridge</title>
+		<link href="/_app/immutable/assets/0.CGk9dsc6.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/Footer.CLZBX19I.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/AboutPage.BX3MC3ax.css" rel="stylesheet">
+		<!-- No analytics beacon here, deliberately, and it must stay that way while
+		     the copy says what it currently says.
+
+		     The Cloudflare Web Analytics snippet used to sit here. It was a sound
+		     choice on its own terms — cookieless, no localStorage, so no consent
+		     banner under TDDDG §25 — but three places on this site state flatly
+		     that there is no analytics at all:
+
+		       src/routes/datenschutz/+page.svelte  "nutzt keine Analyse-Dienste"
+		       src/lib/copy/en.js  security.stack   "no cookies, no analytics"
+		       src/lib/copy/de.js  security.stack   "keine Cookies, keine Analyse"
+
+		     The first of those is the Datenschutzerklärung, so the mismatch was an
+		     Art. 13 DSGVO disclosure gap and an affirmative denial of a processing
+		     activity that was happening. On a site whose security page is the
+		     document a general counsel reads, a claim a visitor can disprove from
+		     the network tab is worse than having no metric.
+
+		     Traffic is still visible: Cloudflare's zone analytics are server-side,
+		     need no beacon, and report requests, bandwidth, countries and cache
+		     ratio without anything running in the visitor's browser.
+
+		     To bring client-side analytics back, all three claims above have to
+		     change first and the Datenschutzerklärung needs its own section naming
+		     the processor and its legal basis. Re-adding the script alone puts the
+		     site back into a false statement. -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><div class="doc"><header class="doc-top"><div class="doc-bar"><a class="doc-back" href="/"><img class="logo-h" src="/brand/dinobridge-horizontal-compact.svg" alt="Dinobridge — Home" height="32"/></a> <span class="doc-end"><span class="doc-lang"><!--[0--><span aria-current="true">EN</span><a href="/de/ueber-uns/" data-sveltekit-reload="">DE</a><!--]--></span> <button class="theme-toggle" type="button" data-theme-toggle="" aria-label="Switch colour theme"><span class="tt-to-light">Light</span><span class="tt-to-dark">Dark</span></button><!----></span></div> <p class="meta">About us</p> <h1>What stands behind Dinobridge.</h1> <!--[--><p class="doc-intro">Most AI projects fail for one of two reasons. Either the person who understood the business could not build, so the thing that got built solved the wrong problem — or the person who could build did not understand the business, so it solved a real problem nobody had.</p><p class="doc-intro">Years of professional engineering sit behind Dinobridge, spent building AI systems in production: the kind other people depend on, that survive an audit, a handover and colleagues who never asked for the tool.</p><p class="doc-intro">Dinobridge is owned and led by Moha Aghanoori, and this page is the case for why that combination is the qualification rather than a compromise.</p><!--]--></header><!----> <section><h2>Why that combination is the qualification.</h2> <ol class="doc-rows"><!--[--><li><div><h3>AI engineering, not prompt-writing.</h3> <p>Retrieval pipelines, agents, model and prompt versioning, deployment, and evaluation harnesses that decide what is allowed to reach production. This is the part that separates a demo from a system your team can rely on when nobody is watching it.</p></div></li><li><div><h3>Business operations.</h3> <p>Years of it inside organisations where the AI had to work for colleagues who never asked for it, survive a handover, and answer to an auditor. That is a different discipline from making something impressive, and it is the one that decides whether a system is still in use a year later.</p></div></li><li><div><h3>Regulated workflows.</h3> <p>Contracts under confidentiality, with permissions and an audit trail as first-class requirements rather than a later phase. It is why the law-firm work starts with what may not leave the building rather than with what the model can do.</p></div></li><li><div><h3>Leadership.</h3> <p>The people who commissioned those systems were the people accountable for the function. Explaining a trade-off to a decision-maker in their own vocabulary — and being told no, and saying no — is most of the job.</p></div></li><li><div><h3>Implementation.</h3> <p>Every system described on this site was built by the person who sat in the room where the problem was described. There is nobody to hand it to.</p></div></li><!--]--></ol></section> <section><h2>The honest part.</h2> <p class="doc-lead">Moha Aghanoori holds a full-time engineering role building production AI, and that role is where most of the production experience on this site comes from — it is the reason we can tell you what survives an audit rather than guessing. It also means capacity is real and limited, and you should know its shape before we talk rather than after.</p> <ul class="doc-list"><!--[--><li>We take a small number of clients at a time. The line at the top of the home page says whether there is room.</li><li>The shape of an engagement — which days, on site or on video, over how many weeks — is agreed with you in writing after the first call and before there is a contract. We will never tell you a day is available and then move it.</li><li>The Head of AI role is a named window every week, agreed before we start.</li><li>Client work and employed work are kept strictly separate. No client’s material has ever touched another engagement, and none ever will.</li><li>If what you need is more than that, you hear it before there is a contract. It has happened.</li><!--]--></ul></section> <section><h2>What we will not do.</h2> <p>Build the button that takes the decision away. Automate anything where your name, your licence or your signature is on the result. Sell you a system when a calendar, a form or a shared spreadsheet would fix it — that has cost us work, and it is most of the reason clients introduce us to other owners.</p> <!--[0--><p class="doc-note"><a href="https://www.linkedin.com/in/mohanuri" rel="me noopener">Moha Aghanoori on LinkedIn</a></p><!--]--></section> <section class="cta svelte-nmuxfl"><p class="meta">Get in touch</p> <h2 class="doc-cta-title svelte-nmuxfl">Tell us what you are dealing with.</h2> <p class="doc-lead">Thirty minutes, free, no preparation. We tell you honestly where AI could change something for you, and where it would not.</p> <div class="doc-row"><a class="btn btn-primary" href="https://cal.com/mohaaghanouri/discovery-call" rel="noopener">Book a 30-minute call</a> <a class="btn" href="/#contact">Or write to us</a> <a class="btn" href="/security/">Security</a></div></section> <footer class="foot svelte-9sff3o"><p class="brand svelte-9sff3o"><img class="logo-m svelte-9sff3o" src="/brand/dinobridge-mark-icon.svg" alt="" height="24"/> <span>© Dinobridge, Silbersteinstraße 131, 12051 Berlin</span></p> <nav class="pages svelte-9sff3o" aria-label="Menu"><!--[--><a href="/for-businesses/" class="svelte-9sff3o">For businesses</a><a href="/for-individuals/" class="svelte-9sff3o">For individuals</a><a href="/for-law-firms/" class="svelte-9sff3o">For law firms</a><a href="/for-marketing-agencies/" class="svelte-9sff3o">For marketing agencies</a><a href="/security/" class="svelte-9sff3o">Security</a><a href="/about/" class="svelte-9sff3o">About us</a><!--]--></nav> <p class="links svelte-9sff3o"><a href="mailto:connect@dinobridge.de" class="svelte-9sff3o">connect@dinobridge.de</a> <!--[--><a href="https://www.linkedin.com/in/mohanuri" rel="me noopener" class="svelte-9sff3o">LinkedIn</a><!--]--> <a href="/impressum/" class="svelte-9sff3o">Impressum</a> <a href="/datenschutz/" class="svelte-9sff3o">Datenschutz</a></p></footer><!----></div><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]--></div>
+	</body>
+</html>
