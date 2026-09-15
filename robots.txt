@@ -1,0 +1,96 @@
+# https://dinobridge.de/robots.txt
+#
+# Static marketing site. Nothing here is private, so there is nothing to hide
+# from a crawler. robots.txt DEFAULTS TO ALLOW, so the functional content of this
+# file is the four lines below plus the Sitemap line — the rest is a written
+# record of the AI-crawler decision.
+#
+# Two things not to change without thinking:
+#
+# 1. Never add a Disallow here to "help" a noindex. A blocked page cannot be
+#    crawled, so its noindex is never read, so it can still be indexed URL-only
+#    from external links. noindex requires Allow.
+#
+# 2. A named user-agent group REPLACES the * group for that bot. If a Disallow is
+#    ever added under "User-agent: *", every bot named below silently keeps full
+#    access.
+#
+# 3. Cloudflare's "Managed robots.txt" (AI Crawl Control → Signals) must stay OFF.
+#    When on, Cloudflare prepends its own block to the served file — Disallow for
+#    GPTBot, ClaudeBot, CCBot, Google-Extended and friends plus a Content-Signal
+#    line — which contradicts everything below. It was found on and switched off
+#    on 2026-09-07. `curl -s https://dinobridge.de/robots.txt | head` should start
+#    with "User-agent: *" and nothing above it.
+
+User-agent: *
+Allow: /
+
+# --- AI answer engines: allowed on purpose -------------------------------------
+# These fetch pages in order to cite them. For a consultant selling expertise, a
+# citation in a ChatGPT / Claude / Perplexity answer is a lead, not a leak.
+# Vendor docs are explicit that blocking these removes you from their answers.
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# --- On-demand fetchers: a human pasted the URL into an assistant --------------
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Training crawlers: allowed on purpose ------------------------------------
+# Blocking these protects nothing (this is public marketing copy) and does keep
+# the name out of the models people ask "who is a good AI consultant in Berlin".
+# Note Google-Extended governs Gemini/Vertex grounding, not Google Search ranking
+# — blocking it has a documented citation cost and no ranking benefit.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# --- The one exception --------------------------------------------------------
+# Bytespider is the largest single source of AI crawler traffic and has a
+# documented history of ignoring robots.txt. The line costs nothing; treat
+# compliance as optional rather than expected.
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://dinobridge.de/sitemap.xml
+
+# --- IndexNow ---------------------------------------------------------------
+# The key file at /1106c94de54542d3ba814595797e623c.txt proves we own this host to Bing,
+# Yandex and Seznam, which lets new and changed URLs be pushed rather than
+# waited for. Deleting that file silently breaks submission; nothing else does.

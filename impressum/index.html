@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="de"> <head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><!-- Google's favicon crawler wants a square icon that is a multiple of 48px;
+		     favicon.ico only carries 16 and 32. --><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#221a13"><meta name="color-scheme" content="dark light"><title>Impressum — Dinobridge</title><!-- Colour theme. Dark (espresso) is the default and needs no attribute; a
+		     visitor who chose light gets data-theme="light" before first paint.
+		     The click handler is delegated so the toggle works on the pages that
+		     ship no JavaScript bundle. The choice lives in localStorage, on the
+		     visitor's own click only — the Datenschutzerklärung says so. --><script>
+			(function () {
+				var d = document.documentElement;
+				var t = null;
+				try {
+					t = localStorage.getItem('theme');
+				} catch (e) {}
+				if (t === 'light') d.setAttribute('data-theme', 'light');
+				document.addEventListener('click', function (e) {
+					if (!e.target.closest('[data-theme-toggle]')) return;
+					var light = d.getAttribute('data-theme') !== 'light';
+					if (light) d.setAttribute('data-theme', 'light');
+					else d.removeAttribute('data-theme');
+					try {
+						localStorage.setItem('theme', light ? 'light' : 'dark');
+					} catch (e) {}
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#ece1cf' : '#221a13');
+				});
+			})();
+		</script> <meta name="robots" content="noindex"> <!-- No analytics beacon here, deliberately, and it must stay that way while
+		     the copy says what it currently says.
+
+		     The Cloudflare Web Analytics snippet used to sit here. It was a sound
+		     choice on its own terms — cookieless, no localStorage, so no consent
+		     banner under TDDDG §25 — but three places on this site state flatly
+		     that there is no analytics at all:
+
+		       /datenschutz/                    "nutzt keine Analyse-Dienste"
+		       src/lib/copy/en.js  security.stack   "no cookies, no analytics"
+		       src/lib/copy/de.js  security.stack   "keine Cookies, keine Analyse"
+
+		     The first of those is the Datenschutzerklärung, so the mismatch was an
+		     Art. 13 DSGVO disclosure gap and an affirmative denial of a processing
+		     activity that was happening. On a site whose security page is the
+		     document a general counsel reads, a claim a visitor can disprove from
+		     the network tab is worse than having no metric.
+
+		     Traffic is still visible: Cloudflare's zone analytics are server-side,
+		     need no beacon, and report requests, bandwidth, countries and cache
+		     ratio without anything running in the visitor's browser.
+
+		     To bring client-side analytics back, all three claims above have to
+		     change first and the Datenschutzerklärung needs its own section naming
+		     the processor and its legal basis. Re-adding the script alone puts the
+		     site back into a false statement.
+
+		     The same applies to choosing a host: anything with analytics on by
+		     default breaks the claim without anyone deciding to. --><link rel="stylesheet" href="/_astro/index.x2uaJMTP.css">
+<style>.legal-page[data-astro-cid-7dpr4qcz]{min-height:100svh}.legal-head[data-astro-cid-7dpr4qcz]{position:relative;z-index:3;max-width:67.5rem;margin-inline:auto;padding:1.6rem var(--gutter) 0}.legal[data-astro-cid-7dpr4qcz]{padding-block:2.5rem 5rem}h1[data-astro-cid-7dpr4qcz]{font-size:var(--text-h2);margin-bottom:2rem}h2[data-astro-cid-7dpr4qcz]{font-family:var(--font-sans);font-weight:500;font-size:1.1875rem;letter-spacing:-.005em;margin:2rem 0 .75rem}p[data-astro-cid-7dpr4qcz]{max-width:40rem;color:var(--muted)}a[data-astro-cid-7dpr4qcz]{color:var(--text)}p[data-astro-cid-7dpr4qcz]:last-child{margin-top:3rem}.back-home[data-astro-cid-7dpr4qcz] a[data-astro-cid-7dpr4qcz]{display:inline-block;padding:.6rem 0}
+</style></head> <body>  <div class="page"> <div class="nap"></div> <div class="drift"></div> <div class="bloom"></div>   <div class="bank legal-page" data-astro-cid-7dpr4qcz> <div class="legal-head" data-astro-cid-7dpr4qcz> <a href="/" class="logo" style="display:inline-block"> <img src="/brand/dinobridge-horizontal-compact.svg" alt="Dinobridge" height="32" width="123" class="logo-swap-compact" style="height:32px;width:auto;display:block"> </a> </div> <main class="wrap legal" data-astro-cid-7dpr4qcz> <h1 data-astro-cid-7dpr4qcz>Impressum</h1> <h2 data-astro-cid-7dpr4qcz>Angaben gemäß § 5 DDG</h2> <p data-astro-cid-7dpr4qcz> Dinobridge<br data-astro-cid-7dpr4qcz>
+Inhaber: Moha Aghanoori<br data-astro-cid-7dpr4qcz> Silbersteinstraße 131<br data-astro-cid-7dpr4qcz> 12051 Berlin<br data-astro-cid-7dpr4qcz>
+Deutschland
+</p> <h2 data-astro-cid-7dpr4qcz>Kontakt</h2> <!-- The markers below are Cloudflare's documented opt-out from Email Address
+		     Obfuscation, and they must be PLAIN HTML comments. Astro keeps those —
+		     the analytics note in Base.astro proves it. What it does not keep is a
+		     comment handed to set:html as an attribute string: that comes out
+		     escaped, as &lt;!--email_off--&gt;, Cloudflare sees no opt-out and
+		     rewrites the address anyway. Which is exactly what shipped on this
+		     page's first deploy.
+
+		     Without the opt-out Cloudflare rewrites this mailto into a
+		     __cf_email__ span that only resolves once its script runs, so with
+		     JavaScript disabled the address is simply absent.
+	
+		     That is a §5 DDG problem, not a cosmetic one: the Impressum contact has
+		     to be leicht erkennbar und unmittelbar erreichbar, and an address that
+		     exists only after JS is neither. Obfuscation stays ON everywhere else,
+		     where it is useful against address harvesting. --> <!--email_off--> <p data-astro-cid-7dpr4qcz>
+E-Mail: <a href="mailto:connect@dinobridge.de" data-astro-cid-7dpr4qcz>connect@dinobridge.de</a> </p> <!--/email_off--> <h2 data-astro-cid-7dpr4qcz>Verantwortlich für den Inhalt</h2> <p data-astro-cid-7dpr4qcz>Moha Aghanoori (Anschrift wie oben)</p> <p class="back-home" data-astro-cid-7dpr4qcz><a href="/" data-astro-cid-7dpr4qcz>← Zurück zur Startseite</a></p> </main> </div>  </div> </body></html> 
