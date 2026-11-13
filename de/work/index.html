@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="de"> <head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><!-- Google's favicon crawler wants a square icon that is a multiple of 48px;
+		     favicon.ico only carries 16 and 32. --><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#221a13"><meta name="color-scheme" content="dark light"><title>Beispiele aus der Praxis — Dinobridge</title><!-- Colour theme. Dark (espresso) is the default and needs no attribute; a
+		     visitor who chose light gets data-theme="light" before first paint.
+		     The click handler is delegated so the toggle works on the pages that
+		     ship no JavaScript bundle. The choice lives in localStorage, on the
+		     visitor's own click only — the Datenschutzerklärung says so. --><script>
+			(function () {
+				var d = document.documentElement;
+				var t = null;
+				try {
+					t = localStorage.getItem('theme');
+				} catch (e) {}
+				if (t === 'light') d.setAttribute('data-theme', 'light');
+				document.addEventListener('click', function (e) {
+					if (!e.target.closest('[data-theme-toggle]')) return;
+					var light = d.getAttribute('data-theme') !== 'light';
+					if (light) d.setAttribute('data-theme', 'light');
+					else d.removeAttribute('data-theme');
+					try {
+						localStorage.setItem('theme', light ? 'light' : 'dark');
+					} catch (e) {}
+					var m = document.querySelector('meta[name="theme-color"]');
+					if (m) m.setAttribute('content', light ? '#ece1cf' : '#221a13');
+				});
+			})();
+		</script><meta name="description" content="Acht echte KI-Ergebnisse: Kanzleien, Architekturbüros, Forschung, Teamleitungen, Makler, ein Verein, ein Gründer-CEO, ein Vermögensverwalter. Was sich geändert hat."><link rel="canonical" href="https://dinobridge.de/de/work/"><link rel="alternate" hreflang="en" href="https://dinobridge.de/work/"><link rel="alternate" hreflang="de" href="https://dinobridge.de/de/work/"><link rel="alternate" hreflang="x-default" href="https://dinobridge.de/work/"><meta property="og:type" content="website"><meta property="og:title" content="Beispiele aus der Praxis — Dinobridge"><meta property="og:description" content="Acht echte KI-Ergebnisse: Kanzleien, Architekturbüros, Forschung, Teamleitungen, Makler, ein Verein, ein Gründer-CEO, ein Vermögensverwalter. Was sich geändert hat."><meta property="og:url" content="https://dinobridge.de/de/work/"><meta property="og:image" content="https://dinobridge.de/og/de-work.png"><meta name="twitter:card" content="summary_large_image"><meta property="og:locale" content="de_DE"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://dinobridge.de/de/"},{"@type":"ListItem","position":2,"name":"Beispiele aus der Praxis"}]}</script><!-- No analytics beacon here, deliberately, and it must stay that way while
+		     the copy says what it currently says.
+
+		     The Cloudflare Web Analytics snippet used to sit here. It was a sound
+		     choice on its own terms — cookieless, no localStorage, so no consent
+		     banner under TDDDG §25 — but three places on this site state flatly
+		     that there is no analytics at all:
+
+		       /datenschutz/                    "nutzt keine Analyse-Dienste"
+		       src/lib/copy/en.js  security.stack   "no cookies, no analytics"
+		       src/lib/copy/de.js  security.stack   "keine Cookies, keine Analyse"
+
+		     The first of those is the Datenschutzerklärung, so the mismatch was an
+		     Art. 13 DSGVO disclosure gap and an affirmative denial of a processing
+		     activity that was happening. On a site whose security page is the
+		     document a general counsel reads, a claim a visitor can disprove from
+		     the network tab is worse than having no metric.
+
+		     Traffic is still visible: Cloudflare's zone analytics are server-side,
+		     need no beacon, and report requests, bandwidth, countries and cache
+		     ratio without anything running in the visitor's browser.
+
+		     To bring client-side analytics back, all three claims above have to
+		     change first and the Datenschutzerklärung needs its own section naming
+		     the processor and its legal basis. Re-adding the script alone puts the
+		     site back into a false statement.
+
+		     The same applies to choosing a host: anything with analytics on by
+		     default breaks the claim without anyone deciding to. --><link rel="stylesheet" href="/_astro/index.Dvktkv4R.css">
+<style>.film[data-astro-cid-pqqmrt2g]{width:100%;max-width:calc(85svh * 16 / 9);margin-inline:auto}.film-frame[data-astro-cid-pqqmrt2g]{display:block;width:100%;height:auto;aspect-ratio:16 / 9;border:1px solid var(--line);border-radius:var(--radius-r-lg);background:var(--raised);overflow:hidden}.film-note[data-astro-cid-pqqmrt2g]{margin-top:.6rem;font-size:var(--text-ui);line-height:1.45;color:var(--muted)}
+.mark[data-astro-cid-iifiznic]{display:inline-grid;place-items:center;color:var(--text)}.mark-plate[data-astro-cid-iifiznic]{padding:.85rem;border:1px solid var(--line);border-radius:var(--radius-r);background:radial-gradient(120% 100% at 30% 0%,rgb(255 255 255 / .05),transparent 60%),var(--raised)}.mark-art[data-astro-cid-iifiznic]{position:relative;display:block;width:var(--mark-w);height:var(--mark-size)}.mark-art[data-astro-cid-iifiznic] svg[data-astro-cid-iifiznic]{position:absolute;inset:0;width:100%;height:100%;stroke-linecap:round;stroke-linejoin:round}.mark-art[data-astro-cid-iifiznic] *{vector-effect:non-scaling-stroke;stroke-width:clamp(1.25px,calc(var(--mark-size) * .036),3px)}.mark-edge[data-astro-cid-iifiznic]{stroke:var(--accent-fill);opacity:.5;transform:translate(calc(var(--mark-size) * .04),calc(var(--mark-size) * .04))}.mark-face[data-astro-cid-iifiznic]{stroke:currentColor}
+.work-grid{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}.work-card{display:block;height:100%;padding:1.5rem 1.4rem 1.7rem;border:1px solid var(--line);border-radius:var(--radius-r-lg);background:var(--raised);text-decoration:none;transition:border-color .25s ease}.work-card:hover{border-color:color-mix(in srgb,var(--accent-text) 42%,transparent)}.work-film-text{margin-top:1.25rem}.work-card h3{margin:1.1rem 0 .4rem}.work-card p{font-size:var(--text-ui);line-height:1.55;color:var(--muted);margin:0}
+</style>
+<link rel="stylesheet" href="/_astro/index.Bq8H0iZu.css"></head> <body>  <div class="page"> <div class="nap"></div> <div class="drift"></div> <div class="bloom"></div>   <div class="bank">  <header class="site-head above-felt" data-astro-cid-3ef6ksr2> <div class="head-bar" data-astro-cid-3ef6ksr2> <a href="/de/" class="logo" style="display:inline-block"> <img src="/brand/dinobridge-horizontal-compact.svg" alt="Dinobridge" height="32" width="123" class="logo-swap-compact" style="height:32px;width:auto;display:block"> </a> <nav class="head-nav" aria-label="Menü" data-astro-cid-3ef6ksr2> <a href="/de/fuer-unternehmen/" data-astro-cid-3ef6ksr2>Für Unternehmen</a><a href="/de/fuer-einzelpersonen/" data-astro-cid-3ef6ksr2>Für Einzelpersonen</a><a href="/de/work/" aria-current="page" data-astro-cid-3ef6ksr2>Beispiele</a><a href="/de/method/" data-astro-cid-3ef6ksr2>So arbeiten wir</a><a href="/de/ueber-uns/" data-astro-cid-3ef6ksr2>Über uns</a> </nav> <div class="head-end" data-astro-cid-3ef6ksr2> <a class="btn btn-primary head-book" href="https://cal.com/mohaaghanouri/discovery-call" target="_blank" rel="noopener" data-book data-astro-cid-3ef6ksr2> Termin buchen </a> <span class="head-lang" data-astro-cid-3ef6ksr2>  <a href="/work/" hreflang="en" lang="en" data-astro-cid-3ef6ksr2>EN</a> <span aria-current="true" data-astro-cid-3ef6ksr2>DE</span>  </span> <button class="theme-toggle" type="button" data-theme-toggle> <span class="sr-only">Farbschema wechseln</span> <span class="tt-to-light">Hell</span><span class="tt-to-dark">Dunkel</span> </button>  <button class="head-burger" type="button" popovertarget="menu" aria-label="Menü" data-astro-cid-3ef6ksr2> <span class="burger-bars" aria-hidden="true" data-astro-cid-3ef6ksr2></span> </button> </div> </div> <div id="menu" popover class="head-menu" data-astro-cid-3ef6ksr2> <nav aria-label="Menü" data-astro-cid-3ef6ksr2> <a href="/de/fuer-unternehmen/" data-astro-cid-3ef6ksr2>Für Unternehmen</a><a href="/de/fuer-einzelpersonen/" data-astro-cid-3ef6ksr2>Für Einzelpersonen</a><a href="/de/work/" aria-current="page" data-astro-cid-3ef6ksr2>Beispiele</a><a href="/de/method/" data-astro-cid-3ef6ksr2>So arbeiten wir</a><a href="/de/ueber-uns/" data-astro-cid-3ef6ksr2>Über uns</a> <a class="btn btn-primary" href="https://cal.com/mohaaghanouri/discovery-call" target="_blank" rel="noopener" data-book data-astro-cid-3ef6ksr2> Termin buchen </a>  <div class="menu-prefs" data-astro-cid-3ef6ksr2> <span class="head-lang" data-astro-cid-3ef6ksr2>  <a href="/work/" hreflang="en" lang="en" data-astro-cid-3ef6ksr2>EN</a> <span aria-current="true" data-astro-cid-3ef6ksr2>DE</span>  </span> <button class="theme-toggle" type="button" data-theme-toggle> <span class="sr-only">Farbschema wechseln</span> <span class="tt-to-light">Hell</span><span class="tt-to-dark">Dunkel</span> </button> </div> </nav> </div> </header> <script type="module">const e=document.querySelector(".site-head"),s=()=>e?.classList.toggle("is-stuck",window.scrollY>24);addEventListener("scroll",s,{passive:!0});s();</script>  <div class="doc"> <header class="doc-top"> <p class="eyebrow">Beispiele aus der Praxis</p> <h1>Echte Ergebnisse aus Arbeit wie Ihrer.</h1> <p class="doc-intro">Jedes Beispiel ist echte Arbeit für echte Kunden: was ihre Zeit gekostet hat, was wir geändert haben und was sie zurückbekommen haben. Wählen Sie das, was Ihrer Arbeit am nächsten kommt.</p>  </header> <main>  <section> <h2>Ergebnisse, Branche für Branche.</h2> <ul class="work-grid"> <li> <a class="work-card" href="/de/work/lawyers/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M60 14v44M35 23h50M42 23 27 49h30L42 23ZM78 23 63 49h30L78 23Z"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M60 14v44M35 23h50M42 23 27 49h30L42 23ZM78 23 63 49h30L78 23Z"/></svg> </span> </span>  <h3>Anwälte</h3> <p>Jeder Vertrag im Griff, jede Frist im Blick, und Ihre Abende gehören wieder Ihnen.</p> </a> </li><li> <a class="work-card" href="/de/work/architects/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M17 57h86M25 57V31l23-16v42M48 57V26h40v31M60 57V38h16v19"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M17 57h86M25 57V31l23-16v42M48 57V26h40v31M60 57V38h16v19"/></svg> </span> </span>  <h3>Architekten</h3> <p>Der Papierkram ist am selben Tag erledigt. Entwurf und Konformitätsurteil bleiben bei Ihnen.</p> </a> </li><li> <a class="work-card" href="/de/work/research/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><circle cx="44" cy="31" r="18"/><circle cx="76" cy="41" r="18"/><path d="M27 57h66M60 13v46"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><circle cx="44" cy="31" r="18"/><circle cx="76" cy="41" r="18"/><path d="M27 57h66M60 13v46"/></svg> </span> </span>  <h3>Forschung</h3> <p>Zwei Professuren kamen von nahezu null Forschungsstunden auf acht bis zwölf pro Woche.</p> </a> </li><li> <a class="work-card" href="/de/work/team-leaders/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M24 52V29h72v23M60 29V14M42 52v-8M78 52v-8"/><circle cx="24" cy="56" r="4"/><circle cx="60" cy="10" r="4"/><circle cx="96" cy="56" r="4"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M24 52V29h72v23M60 29V14M42 52v-8M78 52v-8"/><circle cx="24" cy="56" r="4"/><circle cx="60" cy="10" r="4"/><circle cx="96" cy="56" r="4"/></svg> </span> </span>  <h3>Teamleitungen</h3> <p>Jedes Einzelgespräch beginnt, wo das letzte endete, und Beurteilungen dauern einen Nachmittag.</p> </a> </li><li> <a class="work-card" href="/de/work/estate-agents/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="m19 38 41-25 41 25M27 34v25h66V34M48 59V41h24v18"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="m19 38 41-25 41 25M27 34v25h66V34M48 59V41h24v18"/></svg> </span> </span>  <h3>Immobilienmakler</h3> <p>Jeder Käufer binnen Minuten beantwortet, und die ernsthaften zuerst.</p> </a> </li><li> <a class="work-card" href="/de/work/volunteer-orgs/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M21 50c13-22 26-22 39 0 13-22 26-22 39 0M21 22h78M32 14v16M88 14v16"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M21 50c13-22 26-22 39 0 13-22 26-22 39 0M21 22h78M32 14v16M88 14v16"/></svg> </span> </span>  <h3>Vereine</h3> <p>Förderanträge in drei Stunden statt zwei Tagen, und doppelt so viele eingereicht.</p> </a> </li><li> <a class="work-card" href="/de/work/executives/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><circle cx="39" cy="36" r="15"/><circle cx="81" cy="36" r="15"/><path d="M54 36h12M39 21V10M81 21V10"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><circle cx="39" cy="36" r="15"/><circle cx="81" cy="36" r="15"/><path d="M54 36h12M39 21V10M81 21V10"/></svg> </span> </span>  <h3>Führungskräfte</h3> <p>Von null Stunden Denkzeit auf etwa zehn pro Woche.</p> </a> </li><li> <a class="work-card" href="/de/work/wire/"> <span class="mark" aria-hidden="true" style="--mark-size:44px;--mark-w:73px" data-astro-cid-iifiznic> <!-- Struck twice. The lower copy is the terracotta edge light, offset down
+	     and right so the whole set reads as lit from the upper left; the upper
+	     copy is the face. One light source across 22 marks is what makes them a
+	     set rather than a folder of icons.
+
+	     Two stacked <svg> elements rather than two <g>s inside one, because a
+	     CSS transform on a <g> resolves in SVG user units — 1.5 units is 6% of
+	     a 24-unit Lucide mark and 1.25% of a 120-unit sector one, so the light
+	     would come from a different direction in each set. On an HTML-positioned
+	     element the offset is real pixels. --> <span class="mark-art" data-astro-cid-iifiznic> <svg class="mark-edge" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M17 20h20M17 52h20M17 36h43"/><circle cx="67" cy="36" r="7"/><path d="M74 36l10-14h19M74 36l10 14h19"/></svg> <svg class="mark-face" viewBox="0 0 120 72" fill="none" data-astro-cid-iifiznic><path d="M17 20h20M17 52h20M17 36h43"/><circle cx="67" cy="36" r="7"/><path d="M74 36l10-14h19M74 36l10 14h19"/></svg> </span> </span>  <h3>Vermögensverwalter</h3> <p>Jeden Montag weiß das Investmentteam, was die führenden KI-Labore getan haben und was es für seine Beteiligungen bedeutet.</p> </a> </li> </ul> </section> <section> <h2>Wire, in unter drei Minuten.</h2> <div> <div class="film" data-astro-cid-pqqmrt2g> <iframe class="film-frame" title="Wire – der Produktfilm, 2:27" srcdoc="<!doctype html><meta name=&#34;referrer&#34; content=&#34;strict-origin-when-cross-origin&#34;><style>
+*{margin:0;box-sizing:border-box}html,body{height:100%;background:#221a13;overflow:hidden}
+a{position:relative;display:block;height:100%;outline:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+span{position:absolute;inset:0;margin:auto;width:clamp(56px,11vw,84px);height:clamp(56px,11vw,84px);border-radius:50%;
+background:rgb(34 26 19/.8);border:1.5px solid rgb(236 225 207/.62);display:grid;place-items:center;transition:background .15s}
+a:hover span,a:focus-visible span{background:#bc5a38}a:focus-visible span{outline:3px solid #ece1cf;outline-offset:3px}
+svg{width:38%;height:38%;margin-left:7%;fill:#ece1cf}
+</style><a href=&#34;https://www.youtube-nocookie.com/embed/o-BprN7lsYI?autoplay=1&#38;amp;rel=0&#38;amp;playsinline=1&#34; aria-label=&#34;Wire – der Produktfilm, 2:27&#34;><img src=&#34;/wire/films/wire-product-film.jpg&#34; alt=&#34;&#34; width=&#34;1280&#34; height=&#34;720&#34;><span><svg viewBox=&#34;0 0 24 24&#34; aria-hidden=&#34;true&#34;><path d=&#34;M7 4.5v15l12.5-7.5z&#34;/></svg></span></a>" loading="lazy" width="1920" height="1080" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" data-astro-cid-pqqmrt2g></iframe> <p class="film-note" data-astro-cid-pqqmrt2g>Wird von YouTube abgespielt: Mit dem Klick auf Play verbinden Sie sich mit YouTube (Google). <a href="/datenschutz/#youtube" data-astro-cid-pqqmrt2g>Datenschutzerklärung</a></p> </div> <script type="module">for(const r of document.querySelectorAll("iframe.film-frame")){const a=()=>{const e=r.contentDocument?.querySelector("a");!e||e.dataset.armed||(e.dataset.armed="1",e.addEventListener("click",t=>{t.metaKey||t.ctrlKey||t.shiftKey||t.button!==0||(t.preventDefault(),r.src=e.href,r.removeAttribute("srcdoc"))}))};a(),r.addEventListener("load",a)}</script>  <p class="work-film-text">Jede Woche muss ein privater Vermögensverwalter wissen, was die führenden KI-Labore der Welt getan haben und was das für seine Investments bedeutet. Wire liest alles, behält, was zählt, und liefert zwei klare Briefings, jede Aussage an ihrer Quelle geprüft.</p> <p class="doc-row"> <a class="btn" href="/de/work/wire/">Den Wire-Fall lesen</a> <a class="btn" href="/de/work/wire/system/">Der zweite Film und das Systemdesign</a> </p> </div> </section> <section> <h2>Eine breitere Erfolgsbilanz.</h2> <div> <ul class="doc-rows"> <li> <div> <h3>Eine Vertragsplattform für eine Konzern-Rechtsabteilung</h3> <p>Verträge werden an einem Ort angefragt, entworfen und geprüft. KI-Vorschläge kommen in Word an, wo eine Juristin sie annimmt oder verwirft, und jeder Schritt ist protokolliert. Sie hat ein kommerzielles Produkt für rund 70.000 Euro im Jahr ersetzt. Gebaut von unserem Gründer als interner KI-Entwickler – die Arbeit, die uns gelehrt hat, was eine Prüfung übersteht.</p> <p> <a href="https://www.linkedin.com/in/mohanuri" rel="me noopener"> Der Nachweis auf LinkedIn </a> </p> </div> </li><li> <div> <h3>Ein Kundenservice-Assistent, live in sechs Märkten</h3> <p>Rund 45 % der ersten Anfragen werden beantwortet, ohne auf einen Menschen zu warten, in sechs Ländern. Ebenfalls interne Arbeit, in einem Berliner Unternehmen.</p> <p> <a href="https://www.linkedin.com/in/mohanuri" rel="me noopener"> Der Nachweis auf LinkedIn </a> </p> </div> </li><li> <div> <h3>Mandatsarbeit in vielen Feldern</h3> <p>Start-up-Gründer und Geschäftsführung, Bereichsleitungen in größeren Unternehmen, Forschungsgruppen, Architekturbüros, Marketingagenturen, eine Kanzlei, ein Immobilienunternehmen, ein Verein und ein Vermögensverwalter.</p>  </div> </li> </ul> <p class="doc-note">Mandatsarbeit und die Systeme, die unser Gründer als Angestellter gebaut hat, sind getrennt und als solche gekennzeichnet. Kein Mandantenmaterial hat je ein anderes Mandat berührt, und jede Zahl hier hat eine Quelle.</p> </div> </section> <section> <h2>Sprechen wir darüber, was KI für Sie tun könnte.</h2> <div> <p>Dreißig Minuten, kostenlos, ohne Vorbereitung. Wir sagen Ihnen ehrlich, wo KI für Sie etwas verändern könnte und wo nicht.</p> <p class="doc-row"> <a class="btn btn-primary" href="https://cal.com/mohaaghanouri/discovery-call" target="_blank" rel="noopener">30-Minuten-Gespräch vereinbaren</a> <a class="btn" href="/de/method/">So arbeiten wir</a> </p> </div> </section>  </main> </div>  <footer class="foot above-felt" data-astro-cid-sz7xmlte> <p class="brand" data-astro-cid-sz7xmlte> <img class="mark-swap" src="/brand/dinobridge-mark-icon.svg" alt="" height="24" style="height:24px;width:auto;display:block" data-astro-cid-sz7xmlte> <span data-astro-cid-sz7xmlte>© Dinobridge, Silbersteinstraße 131, 12051 Berlin</span> </p> <nav class="pages" aria-label="Menü" data-astro-cid-sz7xmlte> <a href="/de/sicherheit/" data-astro-cid-sz7xmlte>Sicherheit</a><a href="/de/karriere/" data-astro-cid-sz7xmlte>Karriere</a><a href="/de/lernen/" data-astro-cid-sz7xmlte>Lernen</a> </nav> <p class="links" data-astro-cid-sz7xmlte> <a href="mailto:connect@dinobridge.de" data-astro-cid-sz7xmlte>connect@dinobridge.de</a> <a href="https://www.linkedin.com/in/mohanuri" rel="me noopener" data-astro-cid-sz7xmlte>LinkedIn</a> <a href="https://www.youtube.com/@dinobridge" rel="me noopener" data-astro-cid-sz7xmlte>YouTube</a> <a href="/impressum/" data-astro-cid-sz7xmlte>Impressum</a> <a href="/datenschutz/" data-astro-cid-sz7xmlte>Datenschutz</a> </p> </footer>  </div>  </div> </body></html> 
